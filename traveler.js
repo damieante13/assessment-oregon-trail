@@ -20,7 +20,7 @@ class Traveler{
           this.food-=1;
           console.log('Ate a Filling Meal:' + this.isHealthy);
         }
-        return this
+        return
         }    
     };
     

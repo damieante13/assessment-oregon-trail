@@ -7,7 +7,7 @@ class Wagon{
 
     getAvailableSeatCount(){
    return this.capacity-this.passengers.length;
-    }
+    };
 
     join(traveler){
         if(this.getAvailableSeatCount()>0){
@@ -16,24 +16,29 @@ class Wagon{
         }else{
        console.log('There is no more room on wagon for ' + traveler.name)
      }
-    }
+     return this
+    };
 
     shouldQuarantine(){ 
-    //- Returns true if there is at least one unhealthy person in the wagon. Return false if not.
-    if (traveler.isHealthy===false){
-    console.log(traveler.name + ' is unhealthy. Please Quarantine')
-    }//else{
-    // console.log(traveler.name + ' is healthy') 
-    // }
+const healthCheck=this.passengers.some(person=>person.isHealthy===false)
 
+    if (healthCheck===true){
+    console.log('Passenger is unhealthy. Please Quarantine')
+    }else{
+    console.log( 'Everyone is healthy') 
+    }
+    return healthCheck
+    };
+
+    totalFood(){ 
+        let foodTotals=0;
+    
+    for(let index=0; index<this.passengers.length; index+=1){
+        foodTotals +=(this.passengers[index].food)
+   }
+    console.log('Total Food on Wagon ' + foodTotals )
+return foodTotals
     }
 
-//     totalFood(){ 
-//     //Returns the total amount of food among all passengers in the wagon.
-//     for (let counter=0; counter<passengers.length; counter+=1){
-//         sumFood += this.Food
-//     }
-// console.log('Total Food on Wagon '  )
-//     }
 };
 

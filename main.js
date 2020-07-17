@@ -1,12 +1,12 @@
-console.log('God bless this code')
+console.log('God bless this code');
 
 let juan=new Traveler('Juan')
 let henrietta=new Traveler('Henrietta')
 let maude=new Traveler('Maude')
 
-let wagon =new Wagon(2)
+let wagon =new Wagon(2);
 
-console.log(wagon)
+console.log(wagon);
 
 console.log('First Wagon Seat Count?: ' + wagon.getAvailableSeatCount());
 
@@ -17,14 +17,15 @@ wagon.join(maude)
 
 console.log('Juan Eats: '); 
 juan.eat()
+juan.eat()
 
-console.log('Henrietta Hunts: ')
+console.log('Henrietta Hunts: ');
 henrietta.hunt()
 
-console.log(juan)
+console.log(juan);
 
 wagon.shouldQuarantine()
-// wagon.totalFood()
+wagon.totalFood()
 
 
 
