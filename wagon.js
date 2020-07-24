@@ -36,7 +36,7 @@ const healthCheck=this.passengers.some(person=>person.isHealthy===false)
     for(let index=0; index<this.passengers.length; index+=1){
         foodTotals +=(this.passengers[index].food)
    }
-    console.log('Total Food on Wagon ' + foodTotals )
+    // console.log('Total Food on Wagon ' + foodTotals )
 return foodTotals
     }
 

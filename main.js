@@ -4,6 +4,7 @@ let juan=new Traveler('Juan')
 let henrietta=new Traveler('Henrietta')
 let maude=new Traveler('Maude')
 
+
 let wagon =new Wagon(2);
 
 console.log(wagon);
@@ -22,10 +23,10 @@ juan.eat()
 console.log('Henrietta Hunts: ');
 henrietta.hunt()
 
-console.log(juan);
+console.log('Juan: '+juan);
 
-wagon.shouldQuarantine()
-wagon.totalFood()
+console.log('Passenger in Quarantine: '+wagon.shouldQuarantine())
+console.log('Total food: '+wagon.totalFood())
 
 
 
